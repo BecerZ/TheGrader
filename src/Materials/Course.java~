@@ -1,0 +1,103 @@
+package SchoolDomain;
+
+import Person.*;
+import java.util.ArrayList;
+
+public class Course
+{
+    // Properties
+    private ArrayList<Section> sectionList;
+    private String courseName;
+    
+    // Constructor
+    public Course(ArrayList<Section> sectionList, String courseName)
+    {
+        this.sectionList = sectionList;
+        this.courseName = courseName;
+    }
+    
+    // Methods
+    // Returns the sectionList
+    public ArrayList<Section> getSections()
+    {
+        return sectionList;
+    }
+    
+    // Returns the name of the course
+    public String getCourseName()
+    {
+        return courseName;
+    }
+    
+    // Adds new section to the sectionList.
+    public void addSection(Section section)
+    {
+        Boolean sectionExist;
+        
+        // Init
+        sectionExist = false;
+        
+        // For loop which checks the sectionNumbers of new section and the old ones
+        // Which are already in the sectionList.
+        for (int i = 0; i < sectionList.size(); i++)
+        {
+            // If the sectionNumbers match, set sectionExist to true.
+            if (section.getSectionNumber() == sectionList.get(i).getSectionNumber())
+            {
+                sectionExist = true;
+            }
+        }
+        
+        // If sectionExist is false, which means section does not exist in the sectionList
+        // Add the section to the list
+        if (!sectionExist)
+        {
+            sectionList.add(section);
+        }
+        // There are already a section which has the same sectionNumber
+        // With the new one, thus return error.
+        else 
+        {
+            System.out.println("There are already a section which has same section number. Cannot add new section");
+        }
+    }
+    
+    // Removes the selected section from the list.
+    public void removeSection(int sectionNumber)
+    {
+        // The index of student which will be removed.
+        int index;
+        
+        // Boolean variable, for checking existance of section.
+        Boolean sectionExist;
+        
+        // Init
+        index = 0;
+        sectionExist = false;
+        
+        // For loop, which checks sectionNumber's of the student which are in the sectionList
+        // If there is a section which has the given sectionNumber, sets its index and sets sectiontExist to true.
+        for(int i = 0; i<sectionList.size(); i++)
+        {
+            if ( sectionNumber == sectionList.get(i).getSectionNumber())
+            {
+                index = i;
+                sectionExist = true;
+            }
+        }
+        
+        // If there is a section with given sectionNumber in sectionList.
+        if (sectionExist)
+        {
+            sectionList.remove(index);
+        }
+        
+        // There is not a section with given sectionNumber in sectionList. Error.
+        else
+        {
+            System.out.println("There are no such section which has the given section number.");
+        }
+    }
+    
+    
+}

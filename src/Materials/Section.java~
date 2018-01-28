@@ -1,0 +1,101 @@
+package SchoolDomain;
+
+import java.util.ArrayList;
+import Person.*;
+
+public class Section 
+{
+    //Properties.
+    private ArrayList<Student> studentList;
+    private int sectionNumber;
+    
+    //Constructor
+    public Section(ArrayList<Student> studentList, int sectionNumber)
+    {
+        this.studentList = studentList;
+        this.sectionNumber = sectionNumber;
+    }
+    
+    //Methods
+    //Returns studentList.
+    public ArrayList<Student> getStudents()
+    {
+        return studentList;
+    }
+    
+    public void addStudent(Student student)
+    {
+        // A boolean variable for existance of new student.
+        Boolean studentExist;
+        
+        // Init
+        studentExist= false;
+        
+        // For loop which checks IDs of the new student and the old ones in the section.
+        for (int i = 0; i < studentList.size(); i++)
+        {
+            if(student.getIDNumber() == studentList.get(i).getIDNumber())
+            {
+                studentExist = true;
+            }
+        }
+        
+        // If new student's id does not match with id of the other students in section
+        // Add student to the list.
+        if (!studentExist)
+        {
+            studentList.add(student);
+        }
+        
+        // If it matches, error. 
+        else
+        {
+            System.out.println("There are already a student which has same student id. Cannot add new student");
+            
+        }
+    }
+    
+    public int getSectionNumber()
+    {
+        return sectionNumber;
+    }
+    
+    // Removes the student with student ID.
+    public void removeStudent(int studentID)
+    {
+        // The index of student which will be removed.
+        int index;
+        
+        // Boolean variable, for checking the existance of student.
+        Boolean studentExist;
+        
+        // Init
+        index = 0;
+        studentExist = false;
+        
+        // For loop, which checks student ID's of the student which are in the studentList
+        // If there is a student which has the given student ID, sets its index and sets studentExist to true.
+        for (int i = 0; i<studentList.size(); i++)
+        {
+            if ( studentID == studentList.get(i).getIDNumber())
+            {
+                index = i;
+                studentExist = true;
+            }
+        }
+        
+        // If there is a student with given Student ID in studentList.
+        if (studentExist)
+        {
+            studentList.remove(index);
+        }
+        
+        // There is not a student with given studentID in studentList. Error.
+        else
+        {
+            System.out.println("There are no such student which has the given student ID.");
+        }
+    }
+    
+    
+}

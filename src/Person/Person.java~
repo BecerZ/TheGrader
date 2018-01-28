@@ -1,0 +1,39 @@
+package Person;
+
+import SchoolDomain.*;
+
+import java.io.*;
+import java.util.*;
+
+public abstract class Person 
+{
+    //Properties
+    protected String name;
+    protected String surname;
+    protected int IDNumber;
+    
+    // Constructor
+    public Person( String name, String surname, int IDNumber)
+    {
+        this.name = name;
+        this.surname = surname;
+        this.IDNumber = IDNumber;
+    }
+    
+    // Methods
+    public String getName() 
+    {
+        return name;
+    }
+    
+    public String getSurname() 
+    {
+        return surname;
+    }
+    
+    public int getIDNumber() 
+    {
+        return IDNumber;
+    }
+    
+}

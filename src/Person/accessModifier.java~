@@ -1,0 +1,17 @@
+package Person;
+
+import SchoolDomain.*;
+
+import java.io.*;
+import java.util.*;
+
+public interface accessModifier {
+    
+    static final int STUDENT_LEVEL = 0;
+    static final int ASSISTANT_LEVEL = 1;
+    static final int INSTRUCTOR_LEVEL = 2;
+    
+    int getAccessLevel();
+    void setAccessLevel(int anccessLevel);
+    
+}

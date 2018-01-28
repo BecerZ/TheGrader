@@ -1,0 +1,44 @@
+package Person;
+
+import SchoolDomain.*;
+
+import java.io.*;
+import java.util.*;
+
+public abstract class User extends Person implements accessModifier 
+{
+    // Properties
+    protected int accessLevel;
+    protected String password;
+    
+    
+    // Constructor
+    public User(String name, String surname,int IDNumber, String password)
+    {
+        super(name, surname, IDNumber);
+        this.password = password;
+    }
+    
+    
+    // Methods
+    public int getAccessLevel() 
+    {
+        return accessLevel;
+    }
+    
+    public void setAccessLevel(int accessLevel) 
+    {
+        this.accessLevel = accessLevel;
+    }
+    
+    protected void setPassword(String newPassword) 
+    {
+        password = newPassword;
+    }
+    
+    protected String getPassword() 
+    {
+        return password;
+    }
+    
+}

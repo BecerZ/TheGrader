@@ -1,0 +1,720 @@
+
+<!-- saved from url=(0030)http://simple.sourceforge.net/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1254"><title>Simple 2.7.1</title><style type="text/css">
+   <!--
+      @import url(/styles/main.css);
+   -->
+   </style>
+   <!--script type="text/javascript" src="/syntax/scripts/shCore.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushBash.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushCpp.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushCSharp.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushCss.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushDelphi.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushDiff.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushGroovy.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushJava.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushJScript.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushPhp.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushPlain.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushPython.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushRuby.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushScala.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushSql.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushVb.js"></script>
+   <script type="text/javascript" src="/syntax/scripts/shBrushXml.js"></script>
+   <link type="text/css" rel="stylesheet" href="/syntax/styles/shCore.css"/>
+   <link type="text/css" rel="stylesheet" href="/syntax/styles/shThemeDefault.css"/>
+   <script type="text/javascript">
+      SyntaxHighlighter.config.clipboardSwf = '/syntax/scripts/clipboard.swf';
+      SyntaxHighlighter.all();
+   </script-->
+   <!--link href="/syntax/prettify.css" type="text/css" rel="stylesheet" />
+   <script type="text/javascript" src="/syntax/prettify.js"></script-->
+   <script type="text/javascript" src="./SimpleLibraryHomePage_Citation_files/sh_main.js"></script>
+   <link type="text/css" rel="stylesheet" href="./SimpleLibraryHomePage_Citation_files/sh_style.css">
+   <meta name="keywords" content="xml,java,serialization,serialisation">
+   <meta name="description" content="Simple XML serialzation and configuration">
+</head><body onload="sh_highlightDocument(&#39;/syntax/&#39;, &#39;.js&#39;);" background="./SimpleLibraryHomePage_Citation_files/bkgrnd_greydots.png" style="margin: 0; padding: 0; text-align: center;"><br><br>
+<div id="top" style="margin: 0 auto; border: 1px hidden rgb(255, 255, 255); position: relative; top: 0px; width: 720; visibility: visible;">
+      <div style="position: absolute; top: 17px; left: -8pt; z-index: 1;">
+         <table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+   <td bgcolor="#000000">
+      <table border="0" cellspacing="1" cellpadding="0" width="100%">
+      <tbody><tr>
+         <td bgcolor="#ffffff">
+            <table border="0" cellspacing="10" cellpadding="0" width="100%">
+            <tbody><tr>
+               <td>
+                  <div style="position: relative; top: 0pt; left: 0pt; width: 720px; height: 180px;">
+                     <div style="position: absolute; top: 2px; left: 0pt; width: 720px;">
+                        <table border="0" cellpadding="10" width="100%">
+                        <tbody><tr>
+                           <td valign="top">
+                              <table border="0">
+                              <tbody><tr>
+                                 <td><br><img src="./SimpleLibraryHomePage_Citation_files/logo-new-black.png"></td>
+                              </tr>
+                              <tr>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>&nbsp;<img src="./SimpleLibraryHomePage_Citation_files/statement.png"></td>
+                              </tr>
+                              </tbody></table>
+                           </td>
+                           <td align="right">
+                           <table border="0" cellpadding="20">
+                           <tbody><tr>
+                              <td valign="bottom">
+                                 <form name="google" method="GET" action="http://www.google.com/search">
+                                 <input type="text" name="q" size="18" maxlength="255" value="Search" class="textsmall" onfocus="if(this.value==&#39;Search&#39;)this.value=&#39;&#39;">
+                                 <input type="hidden" name="as_sitesearch" value="simple.sourceforge.net">
+                                 </form>
+                              </td>
+                           </tr>
+                           </tbody></table>
+                           </td>
+                        </tr>
+                        </tbody></table>
+                     </div>
+                  </div>
+
+               </td>
+            </tr>
+            </tbody></table>
+         </td>
+      </tr>
+      </tbody></table>
+   </td>
+</tr>
+</tbody></table>
+      </div>
+</div>
+<div id="bottom" style="margin: 0 auto; border: 1px hidden rgb(255, 255, 255); position: relative; top: 180px; width: 720; visibility: visible;">
+      <div style="position: absolute; top: 0pt; left: -8pt;">
+ <table border="0" cellspacing="0" cellpadding="0">
+<tbody><tr>
+   <td width="100%">  
+   </td>
+   <td>
+         <div style="position: relative; z-index: 30;">
+         <table border="0" cellspacing="0" cellpadding="0">
+   <tbody><tr>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_left.png" height="18" border="0"></td>
+      <td align="center" bgcolor="#000000">
+         <table border="0" cellspacing="0" cellpadding="0">
+         <tbody><tr>
+            <td><img src="./SimpleLibraryHomePage_Citation_files/white_top.png" border="0" height="2" width="70"></td>
+         </tr>
+         <tr>
+                           <td align="center" width="100%" bgcolor="#ffffff" height="16"><a href="http://simple.sourceforge.net/home.php" style="font-family: verdana,geneva,arial,sans-serif; font-style: normal; font-variant: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(0, 0, 0); font-weight: bold; cursor: pointer; text-decoration: none;">Home</a></td>
+                        </tr>
+         </tbody></table> 
+      </td>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_right.png" height="18" border="0"></td>
+   </tr>
+   </tbody></table>
+</div>
+   </td>
+   <td>
+         <div style="position: relative; z-index: 10;">
+         <table border="0" cellspacing="0" cellpadding="0">
+   <tbody><tr>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_left.png" height="18" border="0"></td>
+      <td align="center" bgcolor="#000000">
+         <table border="0" cellspacing="0" cellpadding="0">
+         <tbody><tr>
+            <td><img src="./SimpleLibraryHomePage_Citation_files/white_top.png" border="0" height="2" width="70"></td>
+         </tr>
+         <tr>
+                           <td align="center" width="100%" bgcolor="#ffffff" height="16"><a href="http://simple.sourceforge.net/download/stream/doc/tutorial/tutorial.php" style="font-family: verdana,geneva,arial,sans-serif; font-style: normal; font-variant: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(180, 180, 180); font-weight: bold; cursor: pointer; text-decoration: none;">Tutorial</a></td>
+                        </tr>
+         </tbody></table> 
+      </td>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_right.png" height="18" border="0"></td>
+   </tr>
+   </tbody></table>
+</div>
+   </td>
+   <td>
+         <div style="position: relative; z-index: 10;">
+         <table border="0" cellspacing="0" cellpadding="0">
+   <tbody><tr>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_left.png" height="18" border="0"></td>
+      <td align="center" bgcolor="#000000">
+         <table border="0" cellspacing="0" cellpadding="0">
+         <tbody><tr>
+            <td><img src="./SimpleLibraryHomePage_Citation_files/white_top.png" border="0" height="2" width="70"></td>
+         </tr>
+         <tr>
+                           <td align="center" width="100%" bgcolor="#ffffff" height="16"><a href="http://simple.sourceforge.net/download/stream/doc/examples/examples.php" style="font-family: verdana,geneva,arial,sans-serif; font-style: normal; font-variant: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(180, 180, 180); font-weight: bold; cursor: pointer; text-decoration: none;">Examples</a></td>
+                        </tr>
+         </tbody></table> 
+      </td>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_right.png" height="18" border="0"></td>
+   </tr>
+   </tbody></table>
+</div>
+   </td>
+   <td>
+         <div style="position: relative; z-index: 10;">
+         <table border="0" cellspacing="0" cellpadding="0">
+   <tbody><tr>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_left.png" height="18" border="0"></td>
+      <td align="center" bgcolor="#000000">
+         <table border="0" cellspacing="0" cellpadding="0">
+         <tbody><tr>
+            <td><img src="./SimpleLibraryHomePage_Citation_files/white_top.png" border="0" height="2" width="70"></td>
+         </tr>
+         <tr>
+                           <td align="center" width="100%" bgcolor="#ffffff" height="16"><a href="http://simple.sourceforge.net/download.php" style="font-family: verdana,geneva,arial,sans-serif; font-style: normal; font-variant: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(180, 180, 180); font-weight: bold; cursor: pointer; text-decoration: none;">Download</a></td>
+                        </tr>
+         </tbody></table> 
+      </td>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_right.png" height="18" border="0"></td>
+   </tr>
+   </tbody></table>
+</div>
+   </td>
+   <td>
+         <div style="position: relative; z-index: 10;">
+         <table border="0" cellspacing="0" cellpadding="0">
+   <tbody><tr>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_left.png" height="18" border="0"></td>
+      <td align="center" bgcolor="#000000">
+         <table border="0" cellspacing="0" cellpadding="0">
+         <tbody><tr>
+            <td><img src="./SimpleLibraryHomePage_Citation_files/white_top.png" border="0" height="2" width="70"></td>
+         </tr>
+         <tr>
+                           <td align="center" width="100%" bgcolor="#ffffff" height="16"><a href="http://simple.sourceforge.net/maven.php" style="font-family: verdana,geneva,arial,sans-serif; font-style: normal; font-variant: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(180, 180, 180); font-weight: bold; cursor: pointer; text-decoration: none;">Maven</a></td>
+                        </tr>
+         </tbody></table> 
+      </td>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_right.png" height="18" border="0"></td>
+   </tr>
+   </tbody></table>
+</div>
+   </td>
+   <td>
+         <div style="position: relative; z-index: 10;">
+         <table border="0" cellspacing="0" cellpadding="0">
+   <tbody><tr>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_left.png" height="18" border="0"></td>
+      <td align="center" bgcolor="#000000">
+         <table border="0" cellspacing="0" cellpadding="0">
+         <tbody><tr>
+            <td><img src="./SimpleLibraryHomePage_Citation_files/white_top.png" border="0" height="2" width="70"></td>
+         </tr>
+         <tr>
+                           <td align="center" width="100%" bgcolor="#ffffff" height="16"><a href="http://simple.sourceforge.net/articles.php" style="font-family: verdana,geneva,arial,sans-serif; font-style: normal; font-variant: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(180, 180, 180); font-weight: bold; cursor: pointer; text-decoration: none;">Articles</a></td>
+                        </tr>
+         </tbody></table> 
+      </td>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_right.png" height="18" border="0"></td>
+   </tr>
+   </tbody></table>
+</div>
+   </td>
+   <td>
+         <div style="position: relative; z-index: 10;">
+         <table border="0" cellspacing="0" cellpadding="0">
+   <tbody><tr>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_left.png" height="18" border="0"></td>
+      <td align="center" bgcolor="#000000">
+         <table border="0" cellspacing="0" cellpadding="0">
+         <tbody><tr>
+            <td><img src="./SimpleLibraryHomePage_Citation_files/white_top.png" border="0" height="2" width="70"></td>
+         </tr>
+         <tr>
+                           <td align="center" width="100%" bgcolor="#ffffff" height="16"><a href="http://simple.sourceforge.net/resources.php" style="font-family: verdana,geneva,arial,sans-serif; font-style: normal; font-variant: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(180, 180, 180); font-weight: bold; cursor: pointer; text-decoration: none;">Resources</a></td>
+                        </tr>
+         </tbody></table> 
+      </td>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_right.png" height="18" border="0"></td>
+   </tr>
+   </tbody></table>
+</div>
+   </td>
+   <td>
+         <div style="position: relative; z-index: 10;">
+         <table border="0" cellspacing="0" cellpadding="0">
+   <tbody><tr>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_left.png" height="18" border="0"></td>
+      <td align="center" bgcolor="#000000">
+         <table border="0" cellspacing="0" cellpadding="0">
+         <tbody><tr>
+            <td><img src="./SimpleLibraryHomePage_Citation_files/white_top.png" border="0" height="2" width="70"></td>
+         </tr>
+         <tr>
+                           <td align="center" width="100%" bgcolor="#ffffff" height="16"><a href="http://simple.sourceforge.net/download/stream/report/cobertura/" style="font-family: verdana,geneva,arial,sans-serif; font-style: normal; font-variant: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(180, 180, 180); font-weight: bold; cursor: pointer; text-decoration: none;">Source</a></td>
+                        </tr>
+         </tbody></table> 
+      </td>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_right.png" height="18" border="0"></td>
+   </tr>
+   </tbody></table>
+</div>
+   </td>
+   <td>
+         <div style="position: relative; z-index: 10;">
+         <table border="0" cellspacing="0" cellpadding="0">
+   <tbody><tr>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_left.png" height="18" border="0"></td>
+      <td align="center" bgcolor="#000000">
+         <table border="0" cellspacing="0" cellpadding="0">
+         <tbody><tr>
+            <td><img src="./SimpleLibraryHomePage_Citation_files/white_top.png" border="0" height="2" width="70"></td>
+         </tr>
+         <tr>
+                           <td align="center" width="100%" bgcolor="#ffffff" height="16"><a href="http://simple.sourceforge.net/download/stream/doc/javadoc/" style="font-family: verdana,geneva,arial,sans-serif; font-style: normal; font-variant: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; color: rgb(180, 180, 180); font-weight: bold; cursor: pointer; text-decoration: none;">Javadoc</a></td>
+                        </tr>
+         </tbody></table> 
+      </td>
+      <td><img src="./SimpleLibraryHomePage_Citation_files/white_right.png" height="18" border="0"></td>
+   </tr>
+   </tbody></table>
+</div>
+   </td>
+</tr>
+</tbody></table>
+      <div style="position: absolute; top: 17px; left: 0pt; z-index: 20;">
+         <table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+   <td bgcolor="#000000">
+      <table border="0" cellspacing="1" cellpadding="0" width="100%">
+      <tbody><tr>
+
+         <td bgcolor="#ffffff">
+            <table border="0" cellspacing="10" cellpadding="0" width="100%">
+            <tbody><tr>
+               <td>
+                  <div style="position: relative; top: 0pt; left: 0pt; width: 720px;">
+                     <table border="0" cellpadding="15">
+                     <tbody>
+                     <tr>
+                        <td>
+                        <p>
+Simple is a high performance XML serialization and configuration framework for Java. 
+Its goal is to provide an XML 
+framework that enables rapid development of XML configuration and communication
+systems. This framework aids the development of XML systems with minimal
+effort and reduced errors. It offers full object serialization and deserialization, maintaining
+each reference encountered. In essence it is similar to C# XML serialization for the Java platform, but 
+offers additional features for interception and manipulation.
+<br>
+<br>
+</p>
+<table border="0">
+<tbody><tr>
+<td valign="top">
+<table border="0">
+<!-- one -->
+<tbody><tr>
+   <td>
+      &nbsp;&nbsp;&nbsp;
+   </td>
+   <td>
+      <img src="./SimpleLibraryHomePage_Citation_files/home_bullet.gif" border="0">
+   </td>
+   <td>
+      <b style="color: #000000;">Simple&nbsp;framework&nbsp;with&nbsp;powerful&nbsp;capabilities</b>
+   </td>
+</tr>
+<tr>
+   <td></td><td></td>
+   <td>
+      <p>
+      The framework used to provide XML serialization is simple to use and revolves
+      around several annotations an a single persister object used to read and write
+      objects to and from XML. 
+      <br>
+      <br>
+      </p>
+   </td>
+</tr>
+<!-- one and a half -->
+<tr>
+   <td>
+      &nbsp;&nbsp;&nbsp;
+   </td>
+   <td>
+      <img src="./SimpleLibraryHomePage_Citation_files/home_bullet.gif" border="0">
+   </td>
+   <td>
+      <b style="color: #000000;">Can&nbsp;handle&nbsp;cycles&nbsp;in&nbsp;the&nbsp;object&nbsp;graph</b>
+   </td>
+</tr>
+<tr>
+   <td></td><td></td>
+   <td>
+      <p>
+      The persistence engine can handle cycles in the object graph, which enables
+      complex objects with recursive references to be serialized. This ensures
+      that the deserialization process can recover all object references.
+      <br>
+      <br>
+      </p>
+   </td>
+</tr>
+<!-- two -->
+<tr>
+   <td>
+      &nbsp;&nbsp;&nbsp;
+   </td>
+   <td>
+      <img src="./SimpleLibraryHomePage_Citation_files/home_bullet.gif" border="0">
+   </td>
+   <td>
+      <b style="color: #000000;">It&nbsp;requires&nbsp;absolutely&nbsp;no&nbsp;configuration</b>
+   </td>
+</tr>
+<tr>
+   <td></td><td></td>
+   <td>
+      <p>
+      Unlike many of the XML frameworks for Java there are no mappings or configuration
+      required to serialize objects regardless of its complexity. The XML schema is
+      represented using field annotations.
+      <br>
+      <br>
+      </p>
+   </td>
+</tr>
+<!-- three -->
+<tr>
+   <td>
+      &nbsp;&nbsp;&nbsp;
+   </td>
+   <td>
+      <img src="./SimpleLibraryHomePage_Citation_files/home_bullet.gif" border="0">
+   </td>
+   <td>
+      <b style="color: #000000;">Extremely&nbsp;rapid&nbsp;development&nbsp;with&nbsp;XML</b>
+   </td>
+</tr>
+<tr>
+   <td></td><td></td>
+   <td>
+      <p>
+      Developing XML configuration and communication systems can be done
+      much quicker than through the use of XML frameworks such as DOM,
+      SAX, and even other frameworks such as Digester and XStream.
+      <br>
+      <br>
+      </p>
+   </td>
+</tr>
+<!-- four -->
+<tr>
+   <td>
+      &nbsp;&nbsp;&nbsp;
+   </td>
+   <td>
+      <img src="./SimpleLibraryHomePage_Citation_files/home_bullet.gif" border="0">
+   </td>
+   <td>
+      <b style="color: #000000;">Converts&nbsp;to&nbsp;and&nbsp;from&nbsp;human&nbsp;editable&nbsp;XML</b>
+   </td>
+</tr>
+<tr>
+   <td></td><td></td>
+   <td>
+      <p>
+      A primary goal for the framework is that the XML data used to deserialize
+      a serialize objects is human readable. All XML elements and attributes take
+      a simple structure that can be easily created with a text editor.
+      <br>
+      <br>
+      </p>
+   </td>
+</tr>
+<!-- five -->
+<tr>
+   <td>
+      &nbsp;&nbsp;&nbsp;
+   </td>
+   <td>
+      <img src="./SimpleLibraryHomePage_Citation_files/home_bullet.gif" border="0">
+   </td>
+   <td>
+      <b style="color: #000000;">Contains&nbsp;an&nbsp;XML&nbsp;templating&nbsp;system</b>
+   </td>
+</tr>
+<tr>
+   <td></td><td></td>
+   <td>
+      <p>
+      As part of the deserialization process template markers within the XML 
+      elements and attributes can be replaced with variables. This allows the
+      system to be easily adapted for use as a configuration system with dynamic
+      value substitution.
+      <br>
+      <br>
+      </p>
+   </td>
+</tr>
+</tbody></table>
+</td>
+<td>
+&nbsp;&nbsp;
+</td>
+<td valign="top">
+<table border="0">
+<tbody><tr>
+<td>
+   <table border="0">
+   <tbody><tr>
+   <td>
+      <img src="./SimpleLibraryHomePage_Citation_files/home_bullet.gif" border="0">
+   </td>
+   <td>
+      <b>Feedback</b>
+   </td>
+   </tr>
+   </tbody></table>
+</td>
+</tr>
+<tr>
+<td>
+<div style="border: 1px solid #cccccc; background: #fafafa;">
+<table border="0" cellpadding="5">
+
+<tbody><tr>
+<td>
+<p>
+<i>
+I tried this framework and it's awesome on Android.
+</i>
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p>
+<i>
+BTW your API is ten times better than the serialization framework in .NET and probably
+one of the best designed frameworks I’ve seen.
+</i>
+</p>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<p>
+<i>
+Just thought I should mention, my team is using
+Simple to deserialize
+our Autonomous Underwater Vehicle’s configuration. ARISE AUV Team Captain.
+</i>
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p>
+<i>
+I think Simple framework was an excelent idea. For some years now I have
+been trying to find such an easy way to work with XML in Java, and
+finally, here it is.
+</i>
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p>
+<i>
+I just wanted to say thanks to the Simple team, you guys have done an awsome
+job with Simple, its very intuitive and very powerfull, the combination of which
+has saved me massive amounts of time on this project!
+</i>
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p>
+<i>
+Simple is a great product. I’d been working with Java bean serialization and the XML it generates sucks really hard!!  Not to mention needing to expose all kinds of private state with getter/setter pairs.
+Keep up the good work. Our dev team really appreciates your efforts.
+</i>
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p>
+<i>
+Wonderful project you have got there.
+</i>
+</p>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<p>
+<i>
+I really like the annotation approach to doing this as it's quick and
+easy to understand. The tutorial was also excellent as I could actually
+start coding in &lt;5 minutes, bit of a novelty after spending an hour
+poring over JAXB APIs.
+</i>
+</p>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<p>
+<i>
+Nice work! Simple has greatly helped my projects both at work and at
+home!
+</i>
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p>
+<i>
+I just found Simple today. Excellent work on the project. Nice, simple,
+small. I usually work in C#, so Simple's syntax is very comfortable to
+me compared to .NET's attribute driven mark-up.
+</i>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<i>
+I've been looking for a fast lightweight java xml serializer for a few
+days, just came across Simple, it looks great. I especially like the
+compact xml it can produce, since I'm going to be using it for string
+message passing across a network.
+</i>
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p>
+<i>
+First let me say that simple looks great - it's refreshing to find a
+java serialization tool that works without 5 megs of dependencies!
+</i>
+</p>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<p>
+<i>
+I discovered Simple XML and I think it's great. I like the concept of 
+source-first much better than JAXB's schema-first.
+</i>
+</p>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<p>
+<i>
+First of all thanks ... it's so simple! so simple that when I hit 
+something, I can't help myself from thinking I've misread the doc.
+</i>
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p>
+<i>
+I love to use the Simple XML Framework, it makes things so much easier
+for me.
+</i>
+</p>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<p>
+<i>
+I found your Simple XML serialization framework. It's a great software.
+It saved me a lot of work.
+</i>
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p>
+<i>
+I found SimpleXML library just recently and it is great. Saved me a lot
+of time.
+</i>
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p>
+<i>
+I found your Simple XML serialization framework and it is great
+piece of software.
+</i>
+</p>
+</td>
+</tr>
+
+
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+                        </td>
+                     </tr>
+                     </tbody>
+                     </table>
+                  </div>
+
+               </td>
+            </tr>
+            </tbody></table>
+         </td>
+      </tr>
+      </tbody></table>
+   </td>
+</tr>
+</tbody></table>
+      </div>
+</div></div>
+</body></html>

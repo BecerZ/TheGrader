@@ -1,0 +1,74 @@
+package Person;
+
+import SchoolDomain.*;
+
+import java.io.*;
+import java.util.*;
+
+public abstract class Assignment 
+{   
+    // Properties
+    protected String name;
+    protected double maxGrade;
+    protected double grade;
+    protected ArrayList<String> criterias;
+    
+    // Constructor
+    public Assignment()
+    {
+        this.name = name;
+        this.maxGrade = maxGrade;
+        this.grade = grade;
+        criterias = new ArrayList<String>();
+    }
+    
+    protected boolean setGrade( int grade) 
+    {
+        this.grade = grade;
+        return true; // Login sistemine göre düzenlenecek
+    }
+    
+    protected double getGrade() 
+    {
+        return grade;
+    }
+    
+    protected String getName() 
+    {
+        return name;
+    }
+    
+    protected boolean setMaxGrade( int maxGrade ) 
+    {
+        this.maxGrade = maxGrade;
+        return true; // Login sistemine göre düzenlenecek
+    }
+    
+    protected double getMaxGrade() 
+    {
+        return maxGrade;
+    }
+    
+    protected boolean addCriteria(String criteria) 
+    {
+        criterias.add(criteria);
+        return true; // Login sistemine göre düzenlenecek
+    }
+    
+    protected boolean removeCriteria(String criteria) 
+    {
+        for ( int i = 0; i < criterias.size(); i++)
+        {
+            if (criterias.get(i).equals(criteria))
+                criterias.remove(i);
+        }
+        return true; //Login sistemine göre düzenlenecek
+    }
+    
+    protected ArrayList<String> getCriterias() 
+    {
+        return criterias;
+    }
+    
+    protected abstract double calculateGrade();
+}

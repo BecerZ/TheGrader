@@ -1,0 +1,96 @@
+package SchoolDomain;
+
+import Person.*;
+
+import java.util.ArrayList;
+public class CourseList 
+{
+    // Properties.
+    private ArrayList<Course> courses;
+    
+    // Constructor
+    public CourseList(ArrayList<Course> courses)
+    {
+        this.courses = courses;
+        
+    }
+    
+    // Methods
+    // Returns the courses(ArrayList).
+    public ArrayList<Course> getCourses()
+    {
+        return courses;
+    }
+    
+    // Removes selected course from courses(ArrayList).
+    public void removeCourse(String courseName)
+    {
+        // The index of course which will be removed.
+        int index;
+        
+        // Boolean variable, for checking existance of course.
+        Boolean courseExist;
+        
+        // Init
+        index = 0;
+        courseExist = false;
+        
+        // For loop, which checks courseName's of the course which are in the courses(ArrayList)
+        // If there is a course which has the given courseName, sets its index and sets courseExist to true.
+        for(int i = 0; i<courses.size(); i++)
+        {
+            if ( courseName == courses.get(i).getCourseName())
+            {
+                index = i;
+                courseExist = true;
+            }
+        }
+        
+        // If there is a course with given courseName in courses(ArrayList).
+        if (courseExist)
+        {
+            courses.remove(index);
+        }
+        
+        // There is not a course with given courseName in courses(ArrayList). Error.
+        else
+        {
+            System.out.println("There are no such course which has the given course name.");
+        }
+    }
+    
+    //Adds given course to the courses(ArrayList).
+    public void addCourse(Course course)
+    {
+        Boolean courseExist;
+        
+        // Init
+        courseExist = false;
+        
+        // For loop which checks the courseNames of new section and the old ones
+        // Which are already in the courses(ArrayList).
+        for (int i = 0; i < courses.size(); i++)
+        {
+            // If the courseNames match, set courseExist to true.
+            if (course.getCourseName() == courses.get(i).getCourseName())
+            {
+                courseExist = true;
+            }
+        }
+        
+        // If courseExist is false, which means course does not exist in the courses(ArrayList)
+        // Add the new course to the courses(ArrayList)
+        if (!courseExist)
+        {
+            courses.add(course);
+        }
+        // There are already a course which has the same courseName
+        // With the new one, thus return error.
+        else 
+        {
+            System.out.println("There are already a course which has same course name. Cannot add new course");
+        }
+    }
+    
+    
+}

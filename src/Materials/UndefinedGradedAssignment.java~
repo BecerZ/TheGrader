@@ -1,0 +1,42 @@
+package SchoolDomain;
+import java.util.ArrayList;
+
+public class UndefinedGradedAssignment extends Assignment {
+   
+   
+   
+   // Properties
+   protected String name;
+   protected double maxGrade;
+   protected double grade;
+   protected ArrayList<String> criterias;
+   private ArrayList<Double> percentages;
+   
+   //Constructor
+   public UndefinedGradedAssignment()
+   {
+      super();
+   }
+   
+   public void addCriteria(String criteria)
+   {
+      criterias.add(criteria);
+   }
+   
+   public void removeCriteria(int deletedCriteria)
+   {
+      criterias.remove((deletedCriteria - 1));
+   }
+   
+   public void setPercentage ( int index, double percentage )
+   {
+      percentages.set((index - 1), percentage);
+   }
+   
+   public double calculateGrade()
+   {
+      return 0;
+   }   
+   
+   
+}
